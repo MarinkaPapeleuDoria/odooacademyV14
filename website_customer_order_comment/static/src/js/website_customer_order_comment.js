@@ -11,7 +11,7 @@ odoo.define('website_customer_order_comment.payment', function(require) {
             ajax.jsonRpc('/shop/customer_comment/', 'call', {
                 'comment': customer_comment
             var client_order_ref = $('#client_order_ref').val();
-            ajax.jsonRpc('/shop/client_order_ref/', 'call', {
+            ajax.jsonRpc('/shop/customer_comment/', 'call', {
                 'reference': client_order_ref
             })
         });
