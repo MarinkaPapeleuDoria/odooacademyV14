@@ -11,7 +11,7 @@
             <div class="mb8 row" t-if="not website.is_customer_comment_features">
                 <div t-attf-class="form-group col-lg-6">
                     <h5><label class="control-label" for="client_order_ref">Order Reference</label></h5>
-                    <text rows="3" id="client_order_ref" class="form-control" placeholder="Write your reference..."></text>
+                    <input type="text" rows="3" id="client_order_ref" class="form-control" placeholder="Write your reference..."></input>
                 </div>
                 <div t-attf-class="form-group col-lg-6">
                     <h5><label class="control-label" for="customer_comment">Customer Order Comment</label></h5>
