@@ -15,13 +15,15 @@ class WebsiteSale(WebsiteSale):
         comment when the user clicks on 'pay now' button.
         """
 
-        if post.get('comment'):
+        if post.get('comment') or post.get('reference'):
             order = request.website.sale_get_order()
             redirection = self.checkout_redirection(order)
             if redirection:
                 return redirection
 
             if order and order.id:
-                order.write({'customer_comment': post.get('comment')})
+                order.write({'customer_comment': post.get('comment'),
+                             'client_order_ref' : post.get('reference')
+                             })
 
         return True
