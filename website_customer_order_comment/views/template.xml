@@ -15,7 +15,7 @@
                 </div>
                 <div t-attf-class="form-group col-lg-6">
                     <h5><label class="control-label" for="customer_comment">Customer Order Comment</label></h5>
-                    <textarea rows="3" id="customer_comment" class="form-control" placeholder="Write a comment..."></textarea>                      
+                    <input type="textarea" rows="3" id="customer_comment" class="form-control" placeholder="Write a comment..."></input>
                 </div> 
             </div>  
         </xpath>        
