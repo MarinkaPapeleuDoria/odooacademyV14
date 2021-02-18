@@ -3,11 +3,11 @@
 
 {
     "name": "Customer Order Comment",
-    "author": "AppJetty",
+    "author": "AppJetty/ Guido van der Moer | ERP|OPEN",
+    "version": "11.0.1.0.1",
     'license': 'OPL-1',
-    "version": "14.0.1.0.0",
     "category": "Website",
-    "website": "https://www.appjetty.com/",
+    "website": "https://www.appjetty.com/odoo/odoo-apps.htm",
     "description": "This module is used for add customer order comment section at payment page",
     "summary": "Know your customer's comments, view it on checkout page",
     "depends": ['website_sale'],

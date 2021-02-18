@@ -3,3 +3,5 @@
 
 from . import sale_order
 from . import customer_comment_config
+from . import customer_comment_config
+from . import sale_order

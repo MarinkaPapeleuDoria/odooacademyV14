@@ -18,12 +18,14 @@ class WebsiteSale(WebsiteSale):
         if post.get('comment') or post.get('reference'):
             order = request.website.sale_get_order()
             redirection = self.checkout_redirection(order)
-            if redirection:
-                return redirection
 
             if order and order.id:
-                order.write({'customer_comment': post.get('comment'),
-                             'client_order_ref' : post.get('reference')
+                comment = 'No comment' if len(post.get('comment')) == 0 else post.get('comment')
+                client_order_ref = 'No Reference' if len(post.get('reference')) == 0 else post.get('reference')
+                order.write({'customer_comment': comment,
+                             'client_order_ref': client_order_ref
                              })
+            if redirection:
+                return redirection
 
         return True

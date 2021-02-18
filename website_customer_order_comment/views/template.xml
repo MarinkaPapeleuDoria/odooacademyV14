@@ -5,19 +5,19 @@
                 <script type="text/javascript" src="/website_customer_order_comment/static/src/js/website_customer_order_comment.js"></script>
           </xpath>
     </template>
-        
-    <template id="website_sale_customer_comment" inherit_id="website_sale.payment">     
+
+    <template id="website_sale_customer_comment" inherit_id="website_sale.payment">
         <xpath expr="//div[@id='payment_method']" position="before">
-            <div class="mb8 row" t-if="not website.is_customer_comment_features">
+            <div class="mb8 row" t-if="not website.is_customer_comment_feature">
                 <div t-attf-class="form-group col-lg-6">
-                    <h5><label class="control-label" for="client_order_ref">Order Reference</label></h5>
-                    <input type="text" rows="3" id="client_order_ref" class="form-control" placeholder="Write your reference..."></input>
+                    <label class="control-label" for="customer_comment">Order Reference</label>
+                    <textarea rows="3" id="client_order_ref" class="form-control" placeholder="Write a comment..."></textarea>
                 </div>
                 <div t-attf-class="form-group col-lg-6">
-                    <h5><label class="control-label" for="customer_comment">Customer Order Comment</label></h5>
-                    <input type="textarea" rows="3" id="customer_comment" class="form-control" placeholder="Write a comment..."></input>
-                </div> 
-            </div>  
-        </xpath>        
+                    <label class="control-label" for="customer_comment">Customer Order Comment</label>
+                    <textarea rows="3" id="customer_comment" class="form-control" placeholder="Write a comment..."></textarea>
+                </div>
+            </div>
+        </xpath>
     </template>
 </odoo>

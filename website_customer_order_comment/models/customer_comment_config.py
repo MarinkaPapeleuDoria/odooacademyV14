@@ -10,7 +10,7 @@ class website(models.Model):
 
     _inherit = 'website'
 
-    is_customer_comment_features = fields.Boolean(
+    is_customer_comment_feature = fields.Boolean(
         string='Do you want to disable customer order comment feature',
         default=False, readonly=False)
 
@@ -21,6 +21,6 @@ class ResConfigSettings(models.TransientModel):
 
     _inherit = 'res.config.settings'
 
-    is_customer_comment_features = fields.Boolean(
-        related='website_id.is_customer_comment_features',
+    is_customer_comment_feature = fields.Boolean(
+        related='website_id.is_customer_comment_feature',
         string="Do you want to disable customer order comment feature", readonly=False)
