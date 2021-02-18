@@ -16,6 +16,9 @@ class SaleOrder(models.Model):
     customer_comment = fields.Text('Customer Order Comment',
                                    default="No Comment")
 
+    client_order_ref = fields.Text('Order Reference',
+                                   default="No Reference")
+
     @api.model
     def fields_view_get(self, view_id=None, view_type=False, toolbar=False, submenu=False):
         res = super(SaleOrder,self).fields_view_get(view_id=view_id, view_type=view_type, toolbar=toolbar, submenu=False)

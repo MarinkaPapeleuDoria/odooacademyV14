@@ -11,6 +11,11 @@
                         <field name="customer_comment" nolabel="1"/>
                     </group>
                 </page>
+                <page name="client_order_ref" string="Order Reference">
+                    <group>
+                        <field name="client_order_ref" nolabel="1"/>
+                    </group>
+                </page>
             </xpath>
        </field>
   </record>                               
